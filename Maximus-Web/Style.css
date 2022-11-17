@@ -1,0 +1,1362 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 7px;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Baloo Tammudu 2', cursive;
+        color: #fff;
+        font-size: 2rem;
+        line-height: 1.5;
+        text-align: center;
+        background-color: #333;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    p {
+        padding: 1.6rem 0;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .header {
+        background-color: black;
+        box-shadow: 1px 1px 4px 0 #fff;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        margin-right: 14rem;
+        margin-bottom: 1rem;
+        margin-top: -2rem;
+    }
+
+    .header li a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .header li a:hover,
+    .header .menu-btn:hover {
+        color: blueviolet;
+    }
+
+    .header .logo {
+        display: block;
+        float: left;
+    }
+
+    .header .logo-size {
+        width: 16rem;
+        height: auto;
+        margin-left: 60rem;
+        margin-right: auto;
+    }
+
+    .header .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        padding-top: 2rem;
+    }
+
+    .header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+
+    .header .menu-icon .navicon {
+        background: #fff;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+
+    .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after {
+        background: #fff;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .header .menu-icon .navicon:before {
+        top: 5px;
+    }
+
+    .header .menu-icon .navicon:after {
+        top: -5px;
+    }
+
+    .header .menu-btn {
+        display: none;
+    }
+
+    .header .menu-btn:checked~.menu {
+        max-height: 240px;
+    }
+
+    .header .menu-btn:checked~.menu-icon .navicon {
+        background: transparent;
+    }
+
+    .header .menu-btn:checked~.menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+
+    .header .menu-btn:checked~.menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+
+    .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
+    /*anasayfa */
+    /* Header */
+
+    header {
+        height: 66rem;
+    }
+
+    header .bg-image {
+        position: absolute;
+        background-image: url(img/maxiwebbutlogosuz.png);
+        background-size: cover;
+        background-position: center;
+        height: 66rem;
+        width: 100%;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    header h1 {
+        padding: .1rem;
+        padding-bottom: 0;
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.7rem;
+        text-align: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    header div img {
+        padding-top: 15rem;
+        width: 40rem;
+        height: auto;
+    }
+
+    .btn {
+        display: inline-block;
+        color: #fff;
+        border: 5px solid #666666;
+        padding: .4rem 1.6rem;
+        margin: .5rem 0;
+        transform: all 0.4s;
+        font-weight: bolder;
+    }
+
+    .btn:hover {
+        background-color: rgb(102, 31, 168);
+        color: #fff;
+        font-weight: bolder;
+    }
+
+    .col-content {
+        padding: 1.5rem;
+    }
+
+    /* anasayfa-hakkımızda */
+
+    #section-a .box {
+        padding: 7rem;
+        font-size: 1.5rem;
+    }
+
+    #section-a .box:first-child {
+        background-color: rgb(102, 31, 168);
+    }
+
+    #section-a div iframe {
+        height: 315px;
+        width: 560px;
+    }
+
+    #section-a div .youtube-title {
+        color: rgb(102, 31, 168);
+        font-weight: bolder;
+        font-size: 2.5rem;
+    }
+
+    /*anasayfa-sponsorlarımız*/
+
+    #section-b {
+        background-color: #fff;
+        color: #333;
+        padding: 1rem;
+    }
+
+    #section-b h2 {
+        font-size: 3.2rem;
+        font-weight: bolder;
+    }
+
+    #section-b p img {
+        width: 30rem;
+        height: auto;
+    }
+
+    #section-b p {
+        text-align: center;
+    }
+
+    /*hakkımızda */
+
+    #section-c div {
+        padding-top: 8rem;
+        padding-bottom: 1rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    #section-c div p {
+        text-align: left;
+        font-size: 1.8rem;
+    }
+
+    #section-c img {
+        width: 60rem;
+        height: auto;
+        float: left;
+        margin-left: 28rem;
+        margin-right: 28rem;
+        padding-bottom: 8.8rem;
+    }
+
+    #section-c div h1 {
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    #section-c div ul {
+        list-style-type: initial;
+        margin-left: 2rem;
+    }
+
+    #section-c div ul li {
+        text-align: left;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #section-c div .misyon {
+        margin-left: 0;
+    }
+
+    #section-c div .vizyon {
+        margin-left: 0;
+    }
+
+    /*frc nedir */
+
+    #section-d {
+        margin-top: -53rem;
+        margin-bottom: 5rem;
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    #section-d div img {
+        width: 40rem;
+        height: auto;
+    }
+
+    #section-d div p {
+        text-align: left;
+        font-size: 1.8rem;
+    }
+
+    #section-d div .section-başlık-2 {
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    /*vex nedir */
+
+    #section-e {
+        margin-top: -53rem;
+        margin-bottom: 5rem;
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    #section-e div img {
+        width: 40rem;
+        height: auto;
+    }
+
+    #section-e div p {
+        text-align: left;
+        font-size: 1.8rem;
+    }
+
+    #section-e div .section-başlık-3 {
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    /*bize sponsor olun*/
+
+    #section-f div {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    #section-f {
+        padding-top: 14rem;
+        margin-bottom: 10rem;
+    }
+
+    #section-f div h2 {
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    #section-f div p {
+        text-align: left;
+        font-size: 1.8rem;
+    }
+
+    #section-i div {
+        margin-left: 10rem;
+        margin-right: 50rem;
+        padding-left: 40rem;
+    }
+
+    #section-i div h2 {
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+
+    #section-i div ul li {
+        text-align: left;
+        font-size: 1.8rem;
+        border-top: 2px solid #fff;
+        font-weight: initial;
+    }
+
+    #section-i div ul li:last-child {
+        text-align: left;
+        font-size: 1.8rem;
+        border-bottom: 2px solid #fff;
+        border-top: 2px solid #fff;
+        font-weight: initial;
+    }
+
+    #section-i div ul li b {
+        text-align: left;
+        font-size: 1.8rem;
+        border-right: 2px solid #fff;
+        font-weight: initial;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    #section-i div ul li .i-i-1 {
+        margin-left: 4.3rem;
+    }
+
+    #section-i div ul li .i-i-2 {
+        margin-left: 7.75rem;
+    }
+
+    #section-i div ul li .i-i-3 {
+        margin-left: 4.6rem;
+    }
+
+    #section-i div ul li .i-i-4 {
+        margin-left: 1rem;
+    }
+
+    #section-i div ul li .i-i-5 {
+        margin-left: 3rem;
+    }
+
+    #section-g .p-div-maxi {
+        padding-top: 19.6rem;
+        padding-bottom: 8.8rem;
+        margin-bottom: -4rem;
+    }
+
+    #section-g .p-div-alpha {
+        padding-top: 19.6rem;
+        padding-bottom: 8.8rem;
+        margin-bottom: 5rem;
+    }
+
+    #section-g .p-div-beta {
+        padding-top: 19.6rem;
+        padding-bottom: 8.8rem;
+        margin-bottom: -1rem;
+    }
+
+    #section-g .p-div-gamma {
+        padding-top: 19.6rem;
+        padding-bottom: 8.8rem;
+        margin-bottom: -2rem;
+    }
+
+    #section-g .p-div-delat {
+        padding-top: 19.6rem;
+        padding-bottom: 8.8rem;
+        margin-bottom: 30rem;
+    }
+
+    #section-g div h2 {
+        margin-top: 2rem;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: bolder;
+        margin-left: 43.3rem;
+    }
+
+    #section-g div ul {
+        list-style-type: initial;
+    }
+
+    #section-g div ul li {
+        text-align: left;
+        font-size: 1.6rem;
+        margin-left: 45rem;
+    }
+
+    #section-g .border {
+        border-bottom: 2px solid #fff;
+        margin-bottom: -20rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    #section-g .border-last {
+        margin-bottom: .4rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    #section-g img {
+        width: 40rem;
+        height: auto;
+        margin-top: 1.8rem;
+        border-right: 2px solid #fff;
+    }
+
+    #section-g div .sol-kaydırma {
+        float: left;
+        padding: 0 10px 10px 0;
+    }
+
+    /*bize ulaşın */
+
+    #section-ı {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -50rem;
+    }
+
+    .container-ı {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .title-ı {
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #fff;
+    }
+
+    .contact-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-left {
+        width: 40%;
+        padding: 2rem;
+    }
+
+    .cont-top {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+
+    .cont-element {
+        margin: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .cont-element i {
+        color: #fff;
+        padding: 0.7rem;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        font-size: 2rem;
+        margin-right: 1rem;
+        transition: all 0.4s ease;
+    }
+
+    .cont-element:hover i {
+        background-color: #fff;
+        color: rgb(102, 31, 168);
+    }
+
+    .cont-bottom {
+        padding-top: 3rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .cont-bottom a {
+        color: #fff;
+        width: 5rem;
+        height: 5rem;
+        line-height: 6.5rem;
+        text-align: center;
+        font-size: 2.5rem;
+        background-color: rgb(102, 31, 168);
+        border-radius: 50%;
+        transition: all 0.4s ease;
+    }
+
+    .cont-bottom a:hover {
+        color: rgb(102, 31, 168);
+        background-color: #fff;
+    }
+
+    .cont-right {
+        width: 60%;
+        padding: 4rem;
+    }
+
+    .cont-right form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-right form,
+    input,
+    textarea,
+    button {
+        width: 100%;
+        margin: .5rem 0;
+        background-color: transparent;
+        font-size: 1.6rem;
+        padding: 0.8rem 1.4rem;
+        outline: none;
+        border: 1px solid #fff;
+        color: #fff;
+        transition: all 0.4s ease;
+    }
+
+    .cont-right form,
+    button {
+        background-color: rgb(102, 31, 168);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .cont-right form,
+    button:hover {
+        background-color: #fff;
+        color: rgb(102, 31, 168);
+        cursor: pointer;
+    }
+
+    .cont-right form,
+    input:hover,
+    textarea:hover {
+        color: rgb(102, 31, 168);
+        background-color: #fff;
+    }
+
+    .cont-right form,
+    input:focus,
+    textarea:focus {
+        color: rgb(102, 31, 168);
+        background-color: #fff;
+    }
+
+    /*footer */
+
+    footer .foot {
+        padding: .8rem;
+        background: black;
+    }
+
+    footer a {
+        color: #f2410f;
+        font-weight: bolder;
+    }
+
+    footer a b {
+        color: #2fc7d9;
+        font-weight: bolder;
+    }
+
+    footer .copyright {
+        padding: .8rem;
+        margin: auto;
+        background: #666666;
+        font-size: 1.2rem;
+    }
+
+    /* responsive */
+
+    @media (max-width:1000px) {
+        #section-d {
+            margin-top: -25rem;
+        }
+    }
+
+    @media screen and (min-width:800px) {
+        html {
+            font-size: 9px;
+        }
+
+        iframe {
+            height: 315px;
+            width: 560px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        header {
+            height: 80rem;
+        }
+
+        header .bg-image {
+            height: 80rem;
+        }
+
+        html {
+            font-size: 4px;
+        }
+
+        #section-a div iframe {
+            height: 140px;
+            width: 249px;
+        }
+    }
+
+    @media (max-width:1050px) {
+        .header ul {
+            margin-right: 6rem;
+            margin-bottom: 1rem;
+        }
+
+        .header li a {
+            font-size: 1rem;
+        }
+
+        .header .logo-size {
+            margin-left: 75rem;
+        }
+    }
+
+    @media (max-width:1350px) {
+        .header li a {
+            font-size: 1.1rem;
+        }
+
+        .header .logo-size {
+            margin-left: 50rem;
+        }
+
+        #section-c img {
+            width: 60rem;
+            margin-left: 20rem;
+            margin-right: 20rem;
+        }
+
+        #section-i div {
+            margin-left: 25rem;
+            margin-right: 35rem;
+            padding-left: 10rem;
+        }
+    }
+
+    @media (max-width:1200px) {
+        .header ul {
+            margin-right: 20rem;
+            margin-bottom: 1rem;
+        }
+
+        .header li a {
+            font-size: 2rem;
+        }
+
+        .header .logo-size {
+            margin-left: 80rem;
+        }
+
+        #section-e div p {
+            font-size: 2.4rem;
+        }
+
+        #section-e div img {
+            width: 50rem;
+            height: auto;
+        }
+
+        #section-c img {
+            width: 90rem;
+            margin-left: 40rem;
+            margin-right: 40rem;
+        }
+
+        #section-i div {
+            margin-left: 65rem;
+            margin-right: 75rem;
+            padding-left: 10rem;
+        }
+    }
+
+    @media (max-width:1130px) {
+        .header ul {
+            margin-right: 8rem;
+            margin-bottom: 1rem;
+        }
+
+        .header li a {
+            font-size: 2rem;
+        }
+
+        .header .logo-size {
+            margin-left: 75rem;
+        }
+
+        #section-i div {
+            margin-left: 60rem;
+            margin-right: 70rem;
+            padding-left: 10rem;
+        }
+    }
+
+    @media (max-width:1100px) {
+        .header ul {
+            margin-right: 8rem;
+            margin-bottom: 1rem;
+        }
+
+        .header li a {
+            font-size: 1.6rem;
+        }
+
+        .header .logo-size {
+            margin-left: 75rem;
+        }
+
+        #section-i div {
+            margin-left: 55rem;
+            margin-right: 65rem;
+            padding-left: 10rem;
+        }
+    }
+
+    @media (max-width: 800px) {
+        header {
+            height: 70rem;
+        }
+
+        header .bg-image {
+            height: 70rem;
+        }
+
+        .header .logo-size {
+            margin-left: 50rem;
+            width: 30rem;
+            margin-top: 2rem;
+        }
+
+        #section-c div {
+            padding-top: 15rem;
+        }
+    }
+
+    @media (max-width: 1030px) {
+        .header .logo-size {
+            margin-left: 72rem;
+            width: 20rem;
+            margin-top: 2rem;
+        }
+
+        header div img {
+            padding-top: 20rem;
+        }
+
+        .header li a {
+            font-size: 1.8rem;
+            margin-left: .5rem;
+            margin-bottom: 1rem;
+        }
+
+        #contact-h {
+            margin-top: -45rem;
+        }
+
+        #section-e {
+            margin-top: -45rem;
+        }
+
+        #section-d {
+            margin-top: -48rem;
+        }
+
+        #section-c div {
+            padding-top: 10rem;
+        }
+
+        #section-c img {
+            width: 80rem;
+            margin-left: 35rem;
+            margin-right: 35rem;
+        }
+
+        #section-i div {
+            margin-left: 53rem;
+            margin-right: 63rem;
+            padding-left: 10rem;
+        }
+
+        #section-f {
+            padding-top: 20rem;
+        }
+    }
+
+    @media (max-width: 980px) {
+        .header .logo-size {
+            margin-left: 63rem;
+            width: 30rem;
+            margin-top: 2rem;
+        }
+
+        header div img {
+            padding-top: 20rem;
+        }
+
+        .header li a {
+            font-size: 3.2rem;
+            margin-left: 8rem;
+            margin-bottom: 1rem;
+        }
+
+        #section-d {
+            margin-top: -40rem;
+        }
+
+        #section-i div {
+            margin-left: 45rem;
+            margin-right: 55rem;
+            padding-left: 10rem;
+        }
+
+        #section-f {
+            padding-top: 25rem;
+        }
+    }
+
+    @media screen and (max-width:415px) {
+        .header .logo-size {
+            margin-left: 40rem;
+            width: 40rem;
+            margin-top: 2rem;
+        }
+
+        header div img {
+            padding-top: 20rem;
+        }
+
+        header {
+            height: 80rem;
+        }
+
+        header .bg-image {
+            height: 80rem;
+        }
+
+        header div img {
+            padding-top: 30rem;
+        }
+
+        .header li a {
+            font-size: 4.8rem;
+            margin-left: 8rem;
+            margin-bottom: 1rem;
+        }
+
+        #section-c div {
+            padding-top: 15rem;
+        }
+
+        #section-c img {
+            width: 65rem;
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+
+        #section-i div {
+            margin-left: 20rem;
+            margin-right: 30rem;
+            padding-left: 10rem;
+        }
+
+        #section-g img {
+            width: 40rem;
+        }
+
+        #section-g div ul li {
+            margin-left: 45rem;
+        }
+
+        #section-g div h2 {
+            margin-left: 42.5rem;
+        }
+
+        #section-g div ul li {
+            font-size: 1.5rem;
+        }
+
+        #section-g .p-div-alpha {
+            padding-bottom: 9.8rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media(max-width:376px) {
+        .header .logo-size {
+            margin-left: 28rem;
+            width: 40rem;
+            margin-top: 2rem;
+        }
+
+        header div img {
+            padding-top: 20rem;
+        }
+
+        header {
+            height: 80rem;
+        }
+
+        header .bg-image {
+            height: 80rem;
+        }
+
+        header div img {
+            padding-top: 30rem;
+        }
+
+        .header li a {
+            font-size: 4.8rem;
+            margin-left: 10rem;
+            margin-bottom: 1rem;
+        }
+
+        #section-e div p {
+            font-size: 1.7rem;
+        }
+
+        #section-c img {
+            width: 55rem;
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+
+        #section-i div {
+            margin-left: 15rem;
+            margin-right: 25rem;
+            padding-left: 10rem;
+        }
+
+        #section-g img {
+            width: 35rem;
+        }
+
+        #section-g div ul li {
+            margin-left: 40rem;
+        }
+
+        #section-g div h2 {
+            margin-left: 37.5rem;
+        }
+
+        #section-g div ul li {
+            font-size: 1.1rem;
+        }
+
+        #section-g .p-div-alpha {
+            padding-bottom: 8.8rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media(max-width:769px) {
+        #section-c div {
+            padding-top: 15rem;
+        }
+
+        #section-c img {
+            width: 80rem;
+            margin-left: 25rem;
+            margin-right: 25rem;
+        }
+    }
+
+    @media(max-width:360px) {
+        .header .logo-size {
+            margin-left: 28rem;
+            width: 35rem;
+            margin-top: 2rem;
+        }
+
+        header {
+            height: 80rem;
+        }
+
+        header .bg-image {
+            height: 80rem;
+        }
+
+        header div img {
+            padding-top: 30rem;
+        }
+
+        #section-c div {
+            padding-top: 22rem;
+        }
+
+        #section-c img {
+            width: 50rem;
+            margin-left: 6rem;
+            margin-right: 6rem;
+        }
+
+        #section-i div {
+            margin-left: 15rem;
+            margin-right: 25rem;
+            padding-left: 10rem;
+        }
+
+        #section-g img {
+            width: 35rem;
+        }
+
+        #section-g div ul li {
+            margin-left: 40rem;
+        }
+
+        #section-g div h2 {
+            margin-left: 37.5rem;
+        }
+
+        #section-g div ul li {
+            font-size: 1.1rem;
+        }
+
+        #section-g .p-div-alpha {
+            padding-bottom: 8.8rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media(max-width:320px) {
+        .header .logo-size {
+            margin-left: 22rem;
+            width: 35rem;
+            margin-top: 2rem;
+        }
+
+        header {
+            height: 80rem;
+        }
+
+        header .bg-image {
+            height: 80rem;
+        }
+
+        header div img {
+            padding-top: 30rem;
+        }
+
+        #section-c img {
+            width: 40rem;
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+
+        #section-i div {
+            margin-left: 5rem;
+            margin-right: 15rem;
+            padding-left: 10rem;
+        }
+
+        #section-g div ul li {
+            font-size: 1rem;
+        }
+
+        #section-g .p-div-alpha {
+            padding-bottom: 5.8rem;
+            margin-bottom: 2rem;
+        }
+
+        #section-g .p-div-beta {
+            padding-bottom: 6.8rem;
+            margin-bottom: -1rem;
+        }
+
+        #section-g .p-div-gamma {
+            padding-bottom: 5.8rem;
+            margin-bottom: -2rem;
+        }
+
+        #section-g .p-div-maxi {
+            padding-bottom: 6.8rem;
+            margin-bottom: -4rem;
+        }
+
+        #section-g img {
+            width: 28rem;
+        }
+
+        #section-g div ul li {
+            margin-left: 32rem;
+        }
+
+        #section-g div h2 {
+            margin-left: 29.9rem;
+        }
+
+        #section-f {
+            padding-top: 35rem;
+        }
+    }
+
+    @media(max-width:540px) {
+        .header .logo-size {
+            margin-left: 35rem;
+            width: 33rem;
+            margin-top: 5rem;
+        }
+
+        header {
+            height: 80rem;
+        }
+
+        header .bg-image {
+            height: 80rem;
+        }
+
+        header div img {
+            padding-top: 30rem;
+        }
+
+        #section-d {
+            margin-top: -50rem;
+        }
+
+        #section-c div {
+            padding-top: 16rem;
+        }
+
+        #section-c img {
+            width: 60rem;
+            margin-left: 15rem;
+            margin-right: 15rem;
+        }
+
+        #section-i div {
+            margin-left: 10rem;
+            margin-right: 20rem;
+            padding-left: 10rem;
+        }
+
+        #section-f {
+            padding-top: 28rem;
+        }
+    }
+
+    @media(max-width:281px) {
+        .header .logo-size {
+            margin-left: 20rem;
+            width: 30rem;
+            margin-top: 4rem;
+        }
+
+        header {
+            height: 80rem;
+        }
+
+        header .bg-image {
+            height: 80rem;
+        }
+
+        header div img {
+            padding-top: 30rem;
+        }
+
+        #section-c img {
+            width: 40rem;
+            margin-left: 7rem;
+            margin-right: 7rem;
+        }
+
+        #section-i div {
+            margin-left: 5rem;
+            margin-right: 15rem;
+            padding-left: 10rem;
+        }
+
+        #section-g img {
+            width: 22rem;
+        }
+
+        #section-g div ul li {
+            margin-left: 27rem;
+        }
+
+        #section-g div h2 {
+            margin-left: 25.3rem;
+        }
+
+        #section-g div ul li {
+            font-size: .8rem;
+        }
+
+        #section-g .p-div-alpha {
+            padding-bottom: 3.8rem;
+            margin-bottom: 2rem;
+        }
+
+        #section-g .p-div-beta {
+            padding-top: 19.6rem;
+            padding-bottom: 4.8rem;
+            margin-bottom: -1rem;
+        }
+
+        #section-g .p-div-gamma {
+            padding-top: 19.6rem;
+            padding-bottom: 4.8rem;
+            margin-bottom: -2rem;
+        }
+
+        #section-g .p-div-maxi {
+            padding-bottom: 5.8rem;
+            margin-bottom: -4rem;
+        }
+    }
+
+    @media (min-width: 500px) {
+        html {
+            font-size: 5px;
+        }
+
+        #section-a div iframe {
+            height: 140px;
+            width: 249px;
+        }
+    }
+
+    @media (min-width: 800px) {
+        html {
+            font-size: 6px;
+        }
+
+        #section-a div iframe {
+            height: 252px;
+            width: 450px;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        html {
+            font-size: 11px;
+        }
+
+        .box {
+            width: 50%;
+            float: left;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        .header li {
+            float: left;
+        }
+
+        .header li a {
+            padding: 20px 30px;
+        }
+
+        .header .menu {
+            clear: none;
+            float: right;
+            max-height: none;
+        }
+
+        .header .menu-icon {
+            display: none;
+        }
+    }
